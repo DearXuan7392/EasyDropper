@@ -1,0 +1,9 @@
+{
+  "text.autoconfig.easyhopper.title": "轻松漏斗",
+  "text.autoconfig.easyhopper.option.TRANSFER_COOLDOWN": "漏斗冷却时间(刻)",
+  "text.autoconfig.easyhopper.option.TRANSFER_INPUT_COUNT": "每次输入物品数量(个)",
+  "text.autoconfig.easyhopper.option.TRANSFER_OUTPUT_COUNT": "每次输出物品数量(个)",
+  "text.autoconfig.easyhopper.option.CLASSIFICATION_HOPPER": "启用漏斗分类",
+  "text.autoconfig.easyhopper.option.DROPPER_AUTO_DISPENSE": "启用投掷器自动投掷",
+  "text.autoconfig.easyhopper.option.DISPENSE_COOLDOWN": "投掷器冷却时间(刻)"
+}

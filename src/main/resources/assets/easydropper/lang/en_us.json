@@ -1,0 +1,9 @@
+{
+  "text.autoconfig.easyhopper.title": "Easy Hopper",
+  "text.autoconfig.easyhopper.option.TRANSFER_COOLDOWN": "Transfer Cooldown(tick)",
+  "text.autoconfig.easyhopper.option.TRANSFER_INPUT_COUNT": "Input Item Count",
+  "text.autoconfig.easyhopper.option.TRANSFER_OUTPUT_COUNT": "Output Item Count",
+  "text.autoconfig.easyhopper.option.CLASSIFICATION_HOPPER": "Enable Classification Hopper",
+  "text.autoconfig.easyhopper.option.DROPPER_AUTO_DISPENSE": "Enable Auto Dropper",
+  "text.autoconfig.easyhopper.option.DISPENSE_COOLDOWN": "Dispense Cooldown(tick)"
+}

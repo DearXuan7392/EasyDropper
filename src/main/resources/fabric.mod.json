@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "easydropper",
+  "version": "${version}",
+  "name": "EasyDropper",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/Administrator/EasyDropper"
+  },
+  "license": "Apache-2.0",
+  "icon": "assets/easydropper/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.dearxuan.easydropper.client.EasyDropperClient"
+    ],
+    "main": [
+      "com.dearxuan.easydropper.EasyDropper"
+    ]
+  },
+  "mixins": [
+    "easydropper.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}",
+    "modmenu": ">=6.2.1"
+  }
+}

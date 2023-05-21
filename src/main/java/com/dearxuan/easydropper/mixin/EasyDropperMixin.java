@@ -26,7 +26,7 @@ public abstract class EasyDropperMixin extends DispenserBlockEntity implements I
             if(dispenseCooldown <= 0 && !blockEntity.isEmpty()){
                 IEasyDropperBlock dropperBlock = (IEasyDropperBlock) state.getBlock();
                 dropperBlock.Invoke_dispense((ServerWorld) world, pos);
-                dispenseCooldown = ModConfig.INSTANCE.DISPENSE_COOLDOWN;
+                dispenseCooldown = ModConfig.INSTANCE.DROPPER_COOLDOWN;
             }
         }
 

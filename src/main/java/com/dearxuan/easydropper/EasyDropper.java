@@ -1,4 +1,10 @@
 package com.dearxuan.easydropper;
 
-public class EasyDropper {
+import net.fabricmc.api.ModInitializer;
+
+public class EasyDropper implements ModInitializer {
+    @Override
+    public void onInitialize() {
+
+    }
 }

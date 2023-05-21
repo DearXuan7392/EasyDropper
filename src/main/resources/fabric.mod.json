@@ -17,6 +17,12 @@
     ],
     "main": [
       "com.dearxuan.easydropper.EasyDropper"
+    ],
+    "server": [
+
+    ],
+    "modmenu": [
+      "com.dearxuan.easydropper.Config.ModMenu"
     ]
   },
   "mixins": [

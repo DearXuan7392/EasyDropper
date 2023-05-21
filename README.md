@@ -26,6 +26,12 @@ But the automatic launching behavior of the dropper cannot be stopped now. I'm t
 
 When enabled, the landing position of each item are no longer random. They are accurately calculated based on the value specified by players.
 
+## Tips
+
+You can use droppers to transfer items upwards from below.
+
+![screenshot3](res/sh_3.jpg)
+
 ## Dependencies
 
 ``minecraft 1.19.4``

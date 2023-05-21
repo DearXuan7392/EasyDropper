@@ -8,7 +8,11 @@ Easy Dropper supports the automatic launching of droppers when they contain item
 
 ## Download
 
-Easy Dropper is still under development.
+Easy Dropper is still under development. You can get the alpha version from:
+
+[Gitee](https://gitee.com/EasyMod/EasyDropper/releases/)
+
+[GitHub](https://github.com/DearXuan7392/EasyDropper/releases/)
 
 ## Features
 

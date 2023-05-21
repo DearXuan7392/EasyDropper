@@ -8,7 +8,11 @@
 
 ## 下载
 
-仍在开发中,暂不支持下载
+仍在开发中,仅放出预览版.
+
+[Gitee](https://gitee.com/EasyMod/EasyDropper/releases/)
+
+[GitHub](https://github.com/DearXuan7392/EasyDropper/releases/)
 
 ## 功能说明
 

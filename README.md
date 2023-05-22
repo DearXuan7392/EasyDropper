@@ -1,14 +1,14 @@
 ## Easy Dropper
 
-Easy Dropper supports the automatic launching of droppers when they contain items, as well as modifying the trajectory of the launched items to make them land in a fixed position.
+When Droppers contain items, they will automatically dispense. Unless they are powered by resstone.
 
-![screenshot1](res/sh_1.jpg)
+You can modify the trajectory of the dispensed items to make them land in a fixed position.
+
+![screenshot1](res/sh_4.jpg)
 
 ![screenshot2](res/sh_2_EN.jpg)
 
 ## Download
-
-Easy Dropper is still under development. You can get the alpha version from:
 
 [Gitee](https://gitee.com/EasyMod/EasyDropper/releases/)
 
@@ -18,9 +18,9 @@ Easy Dropper is still under development. You can get the alpha version from:
 
 ### Automatic Dropper
 
-When enabled, the dropper will periodically dispense item if it has. The dispense frequency can be customized by modifying the cooldown.
+The dropper will periodically dispense item if it has. The dispensing frequency can be customized by modifying the cooldown.
 
-But the automatic launching behavior of the dropper cannot be stopped now. I'm trying to fix it.
+**Redstone power will stop it!(Like Hopper).**
 
 ### Fix landing point
 

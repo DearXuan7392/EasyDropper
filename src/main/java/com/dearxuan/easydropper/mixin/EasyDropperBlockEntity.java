@@ -12,23 +12,28 @@ import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
 
 @Mixin(DropperBlockEntity.class)
-public abstract class EasyDropperMixin extends DispenserBlockEntity implements IAutoDropperBlockEntity {
+public abstract class EasyDropperBlockEntity extends DispenserBlockEntity implements IAutoDropperBlockEntity {
 
     public int dispenseCooldown = -1;
 
-    public EasyDropperMixin(BlockPos blockPos, BlockState blockState) {
+    public boolean ENABLE = true;
+
+    public EasyDropperBlockEntity(BlockPos blockPos, BlockState blockState) {
         super(blockPos, blockState);
+    }
+
+    public void SetEnable(boolean flag){
+        this.ENABLE = flag;
     }
 
     public void serverTick(World world, BlockPos pos, BlockState state, DropperBlockEntity blockEntity) {
         if(ModConfig.INSTANCE.DROPPER_AUTO_DISPENSE){
             --dispenseCooldown;
-            if(dispenseCooldown <= 0 && !blockEntity.isEmpty()){
+            if(dispenseCooldown <= 0 && ENABLE && !blockEntity.isEmpty()){
                 IEasyDropperBlock dropperBlock = (IEasyDropperBlock) state.getBlock();
                 dropperBlock.Invoke_dispense((ServerWorld) world, pos);
                 dispenseCooldown = ModConfig.INSTANCE.DROPPER_COOLDOWN;
             }
         }
-
     }
 }

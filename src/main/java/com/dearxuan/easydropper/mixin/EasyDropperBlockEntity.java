@@ -16,20 +16,40 @@ public abstract class EasyDropperBlockEntity extends DispenserBlockEntity implem
 
     public int dispenseCooldown = -1;
 
-    public boolean ENABLE = true;
+    private int _Enable = 0;
 
     public EasyDropperBlockEntity(BlockPos blockPos, BlockState blockState) {
         super(blockPos, blockState);
     }
 
     public void SetEnable(boolean flag){
-        this.ENABLE = flag;
+        if(flag){
+            _Enable = 1;
+        }else{
+            _Enable = -1;
+        }
+    }
+
+    private boolean GetEnable(){
+        if (_Enable == 1){
+            return true;
+        } else if (_Enable == -1){
+            return false;
+        } else {
+            if(this.getWorld().isReceivingRedstonePower(this.getPos())){
+                _Enable = -1;
+                return false;
+            }else{
+                _Enable = 1;
+                return true;
+            }
+        }
     }
 
     public void serverTick(World world, BlockPos pos, BlockState state, DropperBlockEntity blockEntity) {
         if(ModConfig.INSTANCE.DROPPER_AUTO_DISPENSE){
             --dispenseCooldown;
-            if(dispenseCooldown <= 0 && ENABLE && !blockEntity.isEmpty()){
+            if(!blockEntity.isEmpty() && dispenseCooldown <= 0 && GetEnable()){
                 IEasyDropperBlock dropperBlock = (IEasyDropperBlock) state.getBlock();
                 dropperBlock.Invoke_dispense((ServerWorld) world, pos);
                 dispenseCooldown = ModConfig.INSTANCE.DROPPER_COOLDOWN;

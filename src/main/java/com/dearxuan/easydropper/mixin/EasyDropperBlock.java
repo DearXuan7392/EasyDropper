@@ -1,7 +1,7 @@
 package com.dearxuan.easydropper.mixin;
 
 
-import com.dearxuan.easydropper.EasyDropper;
+import com.dearxuan.easydropper.Config.ModConfig;
 import com.dearxuan.easydropper.Interface.IAutoDropperBlockEntity;
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
@@ -13,18 +13,12 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Shadow;
 
 @Mixin(DropperBlock.class)
 public abstract class EasyDropperBlock extends AbstractBlock implements BlockEntityProvider {
 
     public EasyDropperBlock(Settings settings) {
         super(settings);
-    }
-
-    @Shadow
-    public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
-        return null;
     }
 
     @Override
@@ -49,7 +43,9 @@ public abstract class EasyDropperBlock extends AbstractBlock implements BlockEnt
 
     @Override
     public void scheduledTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
-        // 什么事情都不做
+        if(!ModConfig.INSTANCE.DROPPER_AUTO_DISPENSE){
+            ((IEasyDropperBlock)this).Invoke_dispense(world, pos);
+        }
     }
 
     @Override

@@ -15,7 +15,7 @@ import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
 
 @Mixin(DropperBlock.class)
-public abstract class EasyDropperBlock extends AbstractBlock implements BlockEntityProvider {
+public abstract class EasyDropperBlock extends DispenserBlock implements BlockEntityProvider {
 
     public EasyDropperBlock(Settings settings) {
         super(settings);
@@ -44,17 +44,27 @@ public abstract class EasyDropperBlock extends AbstractBlock implements BlockEnt
     @Override
     public void scheduledTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
         if(!ModConfig.INSTANCE.DROPPER_AUTO_DISPENSE){
-            ((IEasyDropperBlock)this).Invoke_dispense(world, pos);
+            super.scheduledTick(state, world, pos, random);
         }
     }
 
     @Override
     public void onBlockAdded(BlockState state, World world, BlockPos pos, BlockState oldState, boolean notify) {
-        ((IAutoDropperBlockEntity)world.getBlockEntity(pos)).SetEnable(!world.isReceivingRedstonePower(pos));
+        if(ModConfig.INSTANCE.DROPPER_AUTO_DISPENSE){
+            ((IAutoDropperBlockEntity)world.getBlockEntity(pos)).SetEnable(!world.isReceivingRedstonePower(pos));
+        }else{
+            super.onBlockAdded(state, world, pos, oldState, notify);
+        }
     }
+
 
     @Override
     public void neighborUpdate(BlockState state, World world, BlockPos pos, Block sourceBlock, BlockPos sourcePos, boolean notify) {
-        ((IAutoDropperBlockEntity)world.getBlockEntity(pos)).SetEnable(!world.isReceivingRedstonePower(pos));
+        if(ModConfig.INSTANCE.DROPPER_AUTO_DISPENSE){
+            ((IAutoDropperBlockEntity)world.getBlockEntity(pos)).SetEnable(!world.isReceivingRedstonePower(pos));
+        }else{
+            super.neighborUpdate(state, world, pos, sourceBlock, sourcePos, notify);
+        }
+
     }
 }

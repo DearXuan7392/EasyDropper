@@ -10,6 +10,8 @@ You can modify the trajectory of the dispensed items to make them land in a fixe
 
 ## Download
 
+[curseforge](https://www.curseforge.com/minecraft/mc-mods/easydropper)
+
 [Gitee](https://gitee.com/EasyMod/EasyDropper/releases/)
 
 [GitHub](https://github.com/DearXuan7392/EasyDropper/releases/)

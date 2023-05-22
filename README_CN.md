@@ -8,6 +8,8 @@
 
 ## 下载
 
+[curseforge](https://www.curseforge.com/minecraft/mc-mods/easydropper)
+
 [Gitee](https://gitee.com/EasyMod/EasyDropper/releases/)
 
 [GitHub](https://github.com/DearXuan7392/EasyDropper/releases/)

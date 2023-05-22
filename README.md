@@ -1,6 +1,6 @@
 ## Easy Dropper
 
-When Droppers contain items, they will automatically dispense. Unless they are powered by resstone.
+When Droppers contain items, they will automatically dispense. Unless they are powered by redstone.
 
 You can modify the trajectory of the dispensed items to make them land in a fixed position.
 

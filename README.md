@@ -8,13 +8,23 @@ You can modify the trajectory of the dispensed items to make them land in a fixe
 
 ![screenshot2](res/sh_2_EN.jpg)
 
+## Dependencies
+
+``minecraft 1.19.4``
+
+``fabric >=0.14.19``
+
+``modmenu>=6.2.1``(Only Client)
+
+**<font color=red>Important</font>**:
+
+If this mod is installed on a client, not a server, it is recommended to install ``modmenu>=6.2.1``, or you will not see the configuration screen.
+
 ## Download
 
-[curseforge](https://www.curseforge.com/minecraft/mc-mods/easydropper)
+[Get It From CurseForge](https://www.curseforge.com/minecraft/mc-mods/easydropper)
 
-[Gitee](https://gitee.com/EasyMod/EasyDropper/releases/)
-
-[GitHub](https://github.com/DearXuan7392/EasyDropper/releases/)
+[Get It From GitHub](https://github.com/DearXuan7392/EasyDropper/releases/)
 
 ## Features
 
@@ -33,17 +43,3 @@ When enabled, the landing position of each item are no longer random. They are a
 You can use droppers to transfer items upwards from below.
 
 ![screenshot3](res/sh_3.jpg)
-
-## Dependencies
-
-``minecraft 1.19.4``
-
-``fabric >=0.14.19``
-
-``modmenu >=6.2.1``
-
-``modmenu`` can be downloaded at the following link
-
-[https://modrinth.com/mod/modmenu/versions](https://modrinth.com/mod/modmenu/versions)
-
-> Easy Hopper is only for client and LAN multiplayer. Only the host needs to install it.

@@ -1,18 +1,34 @@
 ## Easy Dropper
 
-此 MOD 支持投掷器在含有物品时自动发射,以及修改被发射物品的运动曲线,使其每次落在固定的位置.
+此 MOD 控制投掷器在含有物品时自动发射,以及修改被发射物品的运动曲线,使其每次落在固定的位置.
+
+它在服务器上也能运行,但你需要前往``config``文件夹中手动修改配置文件.
 
 ![屏幕截图1](res/sh_4.jpg)
 
 ![屏幕截图2](res/sh_2_CN.jpg)
 
+## 依赖
+
+``minecraft 1.19.4``
+
+``fabric >=0.14.19``
+
+``modmenu>=6.2.1``(仅客户端)
+
+**<font color=red>重要</font>**:
+
+如果此Mod被安装在客户端上,则你最好安装``modmenu>=6.2.1``. 否则不会显示配置界面,你只能前往``config``文件夹中手动修改配置文件.
+
 ## 下载
 
-[curseforge](https://www.curseforge.com/minecraft/mc-mods/easydropper)
+[前往 CurseForge](https://www.curseforge.com/minecraft/mc-mods/easydropper)
 
-[Gitee](https://gitee.com/EasyMod/EasyDropper/releases/)
+[前往 Gitee](https://gitee.com/EasyMod/EasyDropper/releases/)
 
-[GitHub](https://github.com/DearXuan7392/EasyDropper/releases/)
+[前往 GitHub](https://github.com/DearXuan7392/EasyDropper/releases/)
+
+[MC百科](https://www.mcmod.cn/class/10443.html)
 
 ## 功能说明
 
@@ -31,17 +47,3 @@
 你可以使用投掷器将物品垂直向上传递,这在下界非常好用!
 
 ![screenshot3](res/sh_3.jpg)
-
-## 依赖
-
-``minecraft 1.19.4``
-
-``fabric >=0.14.19``
-
-``modmenu >=6.2.1``
-
-其中前置mod``modmenu``可在以下链接下载
-
-[https://modrinth.com/mod/modmenu/versions](https://modrinth.com/mod/modmenu/versions)
-
-仅在客户端上测试通过,服务器不保证有效.

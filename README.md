@@ -10,21 +10,15 @@ You can modify the trajectory of the dispensed items to make them land in a fixe
 
 ## Dependencies
 
-``minecraft 1.19.4``
-
-``fabric >=0.14.19``
-
-``modmenu>=6.2.1``(Only Client)
+``modmenu``(Only Client)
 
 **<font color=red>Important</font>**:
 
-If this mod is installed on a client, not a server, it is recommended to install ``modmenu>=6.2.1``, or you will not see the configuration screen.
+If this mod is installed on a client, not a server, it is recommended to install ``modmenu``, or you will not see the configuration screen.
 
 ## Download
 
 [Get It From CurseForge](https://www.curseforge.com/minecraft/mc-mods/easydropper)
-
-[Get It From GitHub](https://github.com/DearXuan7392/EasyDropper/releases/)
 
 ## Features
 

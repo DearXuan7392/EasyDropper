@@ -1,5 +1,6 @@
 package com.dearxuan.easydropper.Config;
 
+
 import com.dearxuan.easydropper.EntryPoint.EasyDropper;
 import com.terraformersmc.modmenu.api.ConfigScreenFactory;
 import com.terraformersmc.modmenu.api.ModMenuApi;
@@ -37,7 +38,7 @@ public class ModMenu implements ModMenuApi {
                         .create()
                         .setParentScreen(parent)
                         .setTitle(Text.translatable(ModId + ".title"));
-                builder.setSavingRunnable(ModConfig::Save);
+                builder.setSavingRunnable(ModSaver::Save);
                 ConfigCategory general = builder
                         .getOrCreateCategory(Text.translatable(ModId + ".title"));
                 ConfigEntryBuilder entryBuilder = builder.entryBuilder();

@@ -10,23 +10,15 @@
 
 ## 依赖
 
-``minecraft 1.19.4``
-
-``fabric >=0.14.19``
-
-``modmenu>=6.2.1``(仅客户端)
+``modmenu``(仅客户端)
 
 **<font color=red>重要</font>**:
 
-如果此Mod被安装在客户端上,则你最好安装``modmenu>=6.2.1``. 否则不会显示配置界面,你只能前往``config``文件夹中手动修改配置文件.
+如果此Mod被安装在客户端上,则你最好安装``modmenu``. 否则不会显示配置界面,你只能前往``config``文件夹中手动修改配置文件.
 
 ## 下载
 
 [前往 CurseForge](https://www.curseforge.com/minecraft/mc-mods/easydropper)
-
-[前往 Gitee](https://gitee.com/EasyMod/EasyDropper/releases/)
-
-[前往 GitHub](https://github.com/DearXuan7392/EasyDropper/releases/)
 
 [MC百科](https://www.mcmod.cn/class/10443.html)
 
